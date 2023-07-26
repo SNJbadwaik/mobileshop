@@ -1,0 +1,229 @@
+/* Basic styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu.active li {
+        display: block;
+    }
+}
+
+/* Basic styling for the hero section */
+.hero {
+    position: relative;
+    height: 100vh; /* Adjust the height based on your design preferences */
+    background-image: url('https://picsum.photos/200/300'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ff4500; /* Replace with your desired button color */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Basic styling for the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    font-size: 24px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Styling for Font Awesome icons (you can add the Font Awesome link in the <head> section of your HTML) */
+.fa {
+    font-size: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Reset some default styles to improve consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the About and Team sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section, .team-section {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.about-section h2, .team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p, .team-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .about-section h2, .team-section h2 {
+        font-size: 28px;
+    }
+
+    .about-section p, .team-section p {
+        font-size: 16px;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
